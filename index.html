@@ -95,6 +95,61 @@
             padding-right: 0;
         }
 
+
+
+        /* == Education Institute Logo Styling == */
+        .edu-item {
+            margin-bottom: 1.75rem;
+        }
+
+        .edu-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .edu-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #fff;
+            flex: 0 0 50px;
+        }
+
+        .edu-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .edu-degree {
+            margin-bottom: 0.25rem;
+            font-weight: 00;
+            color: #1b1b1b;
+        }
+
+        .edu-institute {
+            margin-bottom: 0.2rem;
+            color: #000000;
+            font-weight: 500;
+            line-height: 1.35;
+        }
+
+        .edu-university,
+        .edu-meta {
+            margin-bottom: 0.2rem;
+            color: #060606;
+            line-height: 1.35;
+        }
+
+        .edu-date {
+            display: inline-block;
+            margin-top: 0.15rem;
+            color: #444;
+        }
+
         /* Responsive: Stack sidebar on top on small screens */
         @media (max-width: 991.98px) {
             .sidebar-sticky {
@@ -110,6 +165,16 @@
             .content-section {
                 padding-top: 70px;
                 margin-top: -56px;
+            }
+
+            .edu-header {
+                gap: 12px;
+            }
+
+            .edu-logo {
+                width: 44px;
+                height: 44px;
+                flex-basis: 44px;
             }
         }
     </style>
@@ -281,35 +346,57 @@
                 <section id="education" class="content-section">
                     <h4 class="section-title" style="color: #1c4587; font-family: Lato, Arial; font-weight: 700;">Education</h4>
                     
-                    <div class="mb-4">
-                        <h6 class="mb-0">Master of Science in Computer Science & Engineering</h6>
-                        <p class="text-muted mb-1">Military Institute of Science & Technology (MIST)</p>
-                        <p class="text-muted mb-1">Bangladesh University of Professionals, Dhaka, Bangladesh</p>
-                        <p class="mb-1"><strong>CGPA:</strong> 3.67/4.00 (Course Completed. Thesis running)</p>
-                        <em>(April 2023 - Running)</em>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/mist-logo.png" alt="MIST logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Master of Science in Computer Science & Engineering</h6>
+                                <p class="edu-university">Military Institute of Science & Technology (MIST)</p>
+                                <p class="edu-university">Bangladesh University of Professionals, Dhaka, Bangladesh</p>
+                                <p class="edu-meta"><strong>CGPA:</strong> 3.67/4.00 (Course Completed. Thesis running)</p>
+                                <em class="edu-date">(April 2023 - Running)</em>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="mb-4">
-                        <h6 class="mb-0">Post Graduate Diploma in Information & Communication Technology</h6>
-                        <p class="text-muted mb-1">Bangladesh Agricultural University, Mymensingh, Bangladesh</p>
-                        <p class="mb-1"><strong>CGPA:</strong> 3.875/4.00</p>
-                        <em>(Graduated: March 2023)</em>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/bau-logo.png" alt="Bangladesh Agricultural University logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Post Graduate Diploma in Information & Communication Technology</h6>
+                                <p class="edu-university">Bangladesh Agricultural University, Mymensingh, Bangladesh</p>
+                                <p class="edu-meta"><strong>CGPA:</strong> 3.87/4.00</p>
+                                <em class="edu-date">(Graduated: March 2023)</em>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="mb-4">
-                        <h6 class="mb-0">Bachelor of Science in Computer Science</h6>
-                        <p class="text-muted mb-1">BRAC University, Dhaka, Bangladesh</p>
-                        <p class="mb-1"><strong>CGPA:</strong> 3.00/4.00</p>
-                        <em>(Graduated: December 2019)</em>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/bracu-logo.png" alt="BRAC University logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Bachelor of Science in Computer Science</h6>
+                                <p class="edu-university">BRAC University, Dhaka, Bangladesh</p>
+                                <p class="edu-meta"><strong>CGPA:</strong> 3.00/4.00</p>
+                                <em class="edu-date">(Graduated: December 2019)</em>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section id="experience" class="content-section">
                     <h4 class="section-title" style="color: #1c4587; font-family: Lato, Arial; font-weight: 700;">Experience</h4>
-                    <div class="mb-4">
-                        <h5 class="mb-0">Researcher</h5>
-                        <p class="text-muted mb-1">Center for Computational Intelligence & Quantum Technologies</p>
-                        <p>Engaged in research focusing on Quantum Computing & Artificial Int, contributing to the center's ongoing projects.</p>
+ 
+
+                                        <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/cciqt.png" alt="BRAC University logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Researcher</h6>
+                                <p class="edu-university">Center for Computational Intelligence & Quantum Technologies</p>
+                                <p>Engaged in research focusing on Quantum Computing & Artificial Int, contributing to the center's ongoing projects.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 
