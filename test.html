@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -95,6 +95,61 @@
             padding-right: 0;
         }
 
+
+
+        /* == Education Institute Logo Styling == */
+        .edu-item {
+            margin-bottom: 1.75rem;
+        }
+
+        .edu-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .edu-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #fff;
+            flex: 0 0 50px;
+        }
+
+        .edu-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .edu-degree {
+            margin-bottom: 0.25rem;
+            font-weight: 00;
+            color: #1b1b1b;
+        }
+
+        .edu-institute {
+            margin-bottom: 0.2rem;
+            color: #000000;
+            font-weight: 500;
+            line-height: 1.35;
+        }
+
+        .edu-university,
+        .edu-meta {
+            margin-bottom: 0.2rem;
+            color: #060606;
+            line-height: 1.35;
+        }
+
+        .edu-date {
+            display: inline-block;
+            margin-top: 0.15rem;
+            color: #444;
+        }
+
         /* Responsive: Stack sidebar on top on small screens */
         @media (max-width: 991.98px) {
             .sidebar-sticky {
@@ -111,8 +166,26 @@
                 padding-top: 70px;
                 margin-top: -56px;
             }
+
+            .edu-header {
+                gap: 12px;
+            }
+
+            .edu-logo {
+                width: 44px;
+                height: 44px;
+                flex-basis: 44px;
+            }
         }
     </style>
+<!-- Microsoft Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xmva43qkv9");
+</script>
 </head>
 
 
@@ -195,13 +268,32 @@
 
             <div class="col-lg-8">
                 
-                <section id="about">
-                    <p class="" style="text-align: justify; font-weight: 400;"> 
+               
+<section id="about">
+    <p style="text-align: justify; font-weight: 400;">
+        I am currently working as an <strong>Officer (IT)</strong> at <a style="font-weight: 600; color: #1c4587; text-decoration: none;" href="https://www.sonalibank.com.bd/">Sonali Bank PLC</a>,
+        where I am involved in IT infrastructure, core banking systems,
+        network security, and technical operations. Alongside my professional
+        responsibilities, I am pursuing my final-year MSc (Thesis) in
+        Computer Science & Engineering at the
+        <a style="font-weight: 500; color: #1c4587; text-decoration: none;"
+           href="https://mist.ac.bd/">
+            Military Institute of Science and Technology (MIST)
+        </a>, where my research focuses on
+        <strong>Quantum Computing, Artificial Intelligence,</strong>
+        and <strong>Information Security</strong>. 
+    </p>
 
-                    I am currently pursuing my final-year MSc (Thesis) in Computer Science & Engineering at the <a style="font-weight: 500;color: #1c4587;text-decoration: none;" href="https://mist.ac.bd/">  Military Institute of Science and Technology (MIST)</a>, where my research centers on <strong> Quantum Computing, Artificial Intelligence,</strong> and <strong> Information Security</strong>. In parallel, I am working as a Researcher at the Center for Computational Intelligence & Quantum Technologies. </p>
+    <p style="text-align: justify;">
+        My academic background includes a Postgraduate Diploma in ICT
+        from Bangladesh Agricultural University and a BSc in Computer
+        Science from BRAC University. I am particularly interested in
+        integrating AI, quantum computing, and data-driven methodologies
+        to address complex challenges and contribute to impactful research
+        in computational intelligence and secure intelligent systems.
+    </p>
+</section>
 
-                    <p style="text-align: justify">My academic background includes a Postgraduate Diploma in ICT from Bangladesh Agricultural University and a BSc in Computer Science from BRAC University. I am strongly interested in applying AI, quantum computing, and data-driven methodologies to solve complex challenges and contribute to impactful research in computational intelligence and secure intelligent systems.</p>
-                </section>
 
                 <section id="research" class="content-section">
                     <h4 class="section-title" style="color: #1c4587; font-family: Lato, Arial; font-weight: 600;">Publications & Research</h4>
@@ -281,35 +373,57 @@
                 <section id="education" class="content-section">
                     <h4 class="section-title" style="color: #1c4587; font-family: Lato, Arial; font-weight: 700;">Education</h4>
                     
-                    <div class="mb-4">
-                        <h6 class="mb-0">Master of Science in Computer Science & Engineering</h6>
-                        <p class="text-muted mb-1">Military Institute of Science & Technology (MIST)</p>
-                        <p class="text-muted mb-1">Bangladesh University of Professionals, Dhaka, Bangladesh</p>
-                        <p class="mb-1"><strong>CGPA:</strong> 3.67/4.00 (Course Completed. Thesis running)</p>
-                        <em>(April 2023 - Running)</em>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/mist-logo.png" alt="MIST logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Master of Science in Computer Science & Engineering</h6>
+                                <p class="edu-university">Military Institute of Science & Technology (MIST)</p>
+                                <p class="edu-university">Bangladesh University of Professionals, Dhaka, Bangladesh</p>
+                                <p class="edu-meta"><strong>CGPA:</strong> 3.67/4.00 (Course Completed. Thesis running)</p>
+                                <em class="edu-date">(April 2023 - Running)</em>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="mb-4">
-                        <h6 class="mb-0">Post Graduate Diploma in Information & Communication Technology</h6>
-                        <p class="text-muted mb-1">Bangladesh Agricultural University, Mymensingh, Bangladesh</p>
-                        <p class="mb-1"><strong>CGPA:</strong> 3.875/4.00</p>
-                        <em>(Graduated: March 2023)</em>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/bau-logo.png" alt="Bangladesh Agricultural University logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Post Graduate Diploma in Information & Communication Technology</h6>
+                                <p class="edu-university">Bangladesh Agricultural University, Mymensingh, Bangladesh</p>
+                                <p class="edu-meta"><strong>CGPA:</strong> 3.87/4.00</p>
+                                <em class="edu-date">(Graduated: March 2023)</em>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="mb-4">
-                        <h6 class="mb-0">Bachelor of Science in Computer Science</h6>
-                        <p class="text-muted mb-1">BRAC University, Dhaka, Bangladesh</p>
-                        <p class="mb-1"><strong>CGPA:</strong> 3.00/4.00</p>
-                        <em>(Graduated: December 2019)</em>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/bracu-logo.png" alt="BRAC University logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Bachelor of Science in Computer Science</h6>
+                                <p class="edu-university">BRAC University, Dhaka, Bangladesh</p>
+                                <p class="edu-meta"><strong>CGPA:</strong> 3.00/4.00</p>
+                                <em class="edu-date">(Graduated: December 2019)</em>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section id="experience" class="content-section">
                     <h4 class="section-title" style="color: #1c4587; font-family: Lato, Arial; font-weight: 700;">Experience</h4>
-                    <div class="mb-4">
-                        <h5 class="mb-0">Researcher</h5>
-                        <p class="text-muted mb-1">Center for Computational Intelligence & Quantum Technologies</p>
-                        <p>Engaged in research focusing on Quantum Computing & Artificial Int, contributing to the center's ongoing projects.</p>
+ 
+
+                                        <div class="edu-item">
+                        <div class="edu-header">
+                            <img src="images/sonali.png" alt="Sonali Bank Logo" class="edu-logo">
+                            <div class="edu-details">
+                                <h6 class="edu-degree">Officer IT</h6>
+                                <p class="edu-university">Sonali Bank PLC</p>
+                                <p>Manage core banking systems, IT infrastructure, network security, technical support, and ensure smooth and secure banking operations.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 
